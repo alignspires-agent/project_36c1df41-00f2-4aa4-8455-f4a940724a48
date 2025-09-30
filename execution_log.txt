@@ -1,0 +1,334 @@
+Lambda Execution Result (Latest Run):
+=== Experiment Errors ===
+
+2025-09-30 02:53:44,098 - INFO - Starting LP Conformal Prediction Time Series Experiment
+
+2025-09-30 02:53:44,099 - INFO - Generating synthetic time series data...
+
+2025-09-30 02:53:44,099 - INFO - Generated 500 training samples and 300 test samples
+
+2025-09-30 02:53:44,099 - INFO - Test series has distribution shifts at times: [100, 200]
+
+2025-09-30 02:53:44,099 - INFO - Training time series predictor...
+
+2025-09-30 02:53:44,102 - INFO - Fitting LP conformal predictor...
+
+2025-09-30 02:53:44,102 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05
+
+2025-09-30 02:53:44,103 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480
+
+2025-09-30 02:53:44,103 - INFO - Testing on time series with distribution shifts...
+
+2025-09-30 02:53:44,105 - INFO - 
+
+==================================================
+
+2025-09-30 02:53:44,105 - INFO - EXPERIMENT RESULTS
+
+2025-09-30 02:53:44,106 - INFO - ==================================================
+
+2025-09-30 02:53:44,106 - INFO - LP Conformal Prediction:
+
+2025-09-30 02:53:44,106 - INFO -   - Empirical Coverage: 0.9500 (Target: 0.90)
+
+2025-09-30 02:53:44,106 - INFO -   - Average Interval Width: 5.2960
+
+2025-09-30 02:53:44,106 - INFO -   - Std of Interval Widths: 0.0000
+
+2025-09-30 02:53:44,106 - INFO -   - Worst-case Quantile: 2.6480
+
+2025-09-30 02:53:44,106 - INFO - 
+
+Standard Conformal Prediction:
+
+2025-09-30 02:53:44,106 - INFO -   - Empirical Coverage: 0.8267
+
+2025-09-30 02:53:44,106 - INFO -   - Quantile: 1.6265
+
+2025-09-30 02:53:44,106 - INFO - 
+
+LP Parameters:
+
+2025-09-30 02:53:44,106 - INFO -   - Epsilon (local): 0.5
+
+2025-09-30 02:53:44,106 - INFO -   - Rho (global): 0.05
+
+2025-09-30 02:53:44,106 - INFO -   - Alpha: 0.1
+
+2025-09-30 02:53:44,106 - INFO - 
+
+==================================================
+
+2025-09-30 02:53:44,106 - INFO - ROBUSTNESS ANALYSIS
+
+2025-09-30 02:53:44,106 - INFO - ==================================================
+
+2025-09-30 02:53:44,106 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.01
+
+2025-09-30 02:53:44,106 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 1.8667
+
+2025-09-30 02:53:44,106 - INFO - ε=0.1, ρ=0.01: Coverage=0.8633, Width=3.7334
+
+2025-09-30 02:53:44,107 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.05
+
+2025-09-30 02:53:44,107 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.2480
+
+2025-09-30 02:53:44,107 - INFO - ε=0.1, ρ=0.05: Coverage=0.9167, Width=4.4960
+
+2025-09-30 02:53:44,107 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)
+
+2025-09-30 02:53:44,107 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.1
+
+2025-09-30 02:53:44,107 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 2.9036
+
+2025-09-30 02:53:44,107 - INFO - ε=0.1, ρ=0.10: Coverage=0.9800, Width=5.8073
+
+2025-09-30 02:53:44,107 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.01
+
+2025-09-30 02:53:44,107 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.2667
+
+2025-09-30 02:53:44,108 - INFO - ε=0.5, ρ=0.01: Coverage=0.9167, Width=4.5334
+
+2025-09-30 02:53:44,108 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05
+
+2025-09-30 02:53:44,108 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480
+
+2025-09-30 02:53:44,108 - INFO - ε=0.5, ρ=0.05: Coverage=0.9500, Width=5.2960
+
+2025-09-30 02:53:44,108 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)
+
+2025-09-30 02:53:44,108 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.1
+
+2025-09-30 02:53:44,108 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.3036
+
+2025-09-30 02:53:44,109 - INFO - ε=0.5, ρ=0.10: Coverage=0.9967, Width=6.6073
+
+2025-09-30 02:53:44,109 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.01
+
+2025-09-30 02:53:44,109 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.7667
+
+2025-09-30 02:53:44,109 - INFO - ε=1.0, ρ=0.01: Coverage=0.9700, Width=5.5334
+
+2025-09-30 02:53:44,109 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.05
+
+2025-09-30 02:53:44,109 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 3.1480
+
+2025-09-30 02:53:44,109 - INFO - ε=1.0, ρ=0.05: Coverage=0.9833, Width=6.2960
+
+2025-09-30 02:53:44,109 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)
+
+2025-09-30 02:53:44,109 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.1
+
+2025-09-30 02:53:44,110 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.8036
+
+2025-09-30 02:53:44,110 - INFO - ε=1.0, ρ=0.10: Coverage=0.9967, Width=7.6073
+
+2025-09-30 02:53:44,110 - INFO - 
+
+Best LP parameters:
+
+2025-09-30 02:53:44,110 - INFO -   - Epsilon: 0.10
+
+2025-09-30 02:53:44,110 - INFO -   - Rho: 0.01
+
+2025-09-30 02:53:44,110 - INFO -   - Coverage: 0.8633
+
+2025-09-30 02:53:44,110 - INFO -   - Average Width: 3.7334
+
+2025-09-30 02:53:44,110 - INFO - 
+
+Experiment completed successfully!
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "",
+
+"stderr": "2025-09-30 02:53:44,098 - INFO - Starting LP Conformal Prediction Time Series Experiment\n2025-09-30 02:53:44,099 - INFO - Generating synthetic time series data...\n2025-09-30 02:53:44,099 - INFO - Generated 500 training samples and 300 test samples\n2025-09-30 02:53:44,099 - INFO - Test series has distribution shifts at times: [100, 200]\n2025-09-30 02:53:44,099 - INFO - Training time series predictor...\n2025-09-30 02:53:44,102 - INFO - Fitting LP conformal predictor...\n2025-09-30 02:53:44,102 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05\n2025-09-30 02:53:44,103 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480\n2025-09-30 02:53:44,103 - INFO - Testing on time series with distribution shifts...\n2025-09-30 02:53:44,105 - INFO - \n==================================================\n2025-09-30 02:53:44,105 - INFO - EXPERIMENT RESULTS\n2025-09-30 02:53:44,106 - INFO - ==================================================\n2025-09-30 02:53:44,106 - INFO - LP Conformal Prediction:\n2025-09-30 02:53:44,106 - INFO -   - Empirical Coverage: 0.9500 (Target: 0.90)\n2025-09-30 02:53:44,106 - INFO -   - Average Interval Width: 5.2960\n2025-09-30 02:53:44,106 - INFO -   - Std of Interval Widths: 0.0000\n2025-09-30 02:53:44,106 - INFO -   - Worst-case Quantile: 2.6480\n2025-09-30 02:53:44,106 - INFO - \nStandard Conformal Prediction:\n2025-09-30 02:53:44,106 - INFO -   - Empirical Coverage: 0.8267\n2025-09-30 02:53:44,106 - INFO -   - Quantile: 1.6265\n2025-09-30 02:53:44,106 - INFO - \nLP Parameters:\n2025-09-30 02:53:44,106 - INFO -   - Epsilon (local): 0.5\n2025-09-30 02:53:44,106 - INFO -   - Rho (global): 0.05\n2025-09-30 02:53:44,106 - INFO -   - Alpha: 0.1\n2025-09-30 02:53:44,106 - INFO - \n==================================================\n2025-09-30 02:53:44,106 - INFO - ROBUSTNESS ANALYSIS\n2025-09-30 02:53:44,106 - INFO - ==================================================\n2025-09-30 02:53:44,106 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.01\n2025-09-30 02:53:44,106 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 1.8667\n2025-09-30 02:53:44,106 - INFO - \u03b5=0.1, \u03c1=0.01: Coverage=0.8633, Width=3.7334\n2025-09-30 02:53:44,107 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.05\n2025-09-30 02:53:44,107 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.2480\n2025-09-30 02:53:44,107 - INFO - \u03b5=0.1, \u03c1=0.05: Coverage=0.9167, Width=4.4960\n2025-09-30 02:53:44,107 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)\n2025-09-30 02:53:44,107 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.1\n2025-09-30 02:53:44,107 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 2.9036\n2025-09-30 02:53:44,107 - INFO - \u03b5=0.1, \u03c1=0.10: Coverage=0.9800, Width=5.8073\n2025-09-30 02:53:44,107 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.01\n2025-09-30 02:53:44,107 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.2667\n2025-09-30 02:53:44,108 - INFO - \u03b5=0.5, \u03c1=0.01: Coverage=0.9167, Width=4.5334\n2025-09-30 02:53:44,108 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05\n2025-09-30 02:53:44,108 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480\n2025-09-30 02:53:44,108 - INFO - \u03b5=0.5, \u03c1=0.05: Coverage=0.9500, Width=5.2960\n2025-09-30 02:53:44,108 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)\n2025-09-30 02:53:44,108 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.1\n2025-09-30 02:53:44,108 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.3036\n2025-09-30 02:53:44,109 - INFO - \u03b5=0.5, \u03c1=0.10: Coverage=0.9967, Width=6.6073\n2025-09-30 02:53:44,109 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.01\n2025-09-30 02:53:44,109 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.7667\n2025-09-30 02:53:44,109 - INFO - \u03b5=1.0, \u03c1=0.01: Coverage=0.9700, Width=5.5334\n2025-09-30 02:53:44,109 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.05\n2025-09-30 02:53:44,109 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 3.1480\n2025-09-30 02:53:44,109 - INFO - \u03b5=1.0, \u03c1=0.05: Coverage=0.9833, Width=6.2960\n2025-09-30 02:53:44,109 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)\n2025-09-30 02:53:44,109 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.1\n2025-09-30 02:53:44,110 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.8036\n2025-09-30 02:53:44,110 - INFO - \u03b5=1.0, \u03c1=0.10: Coverage=0.9967, Width=7.6073\n2025-09-30 02:53:44,110 - INFO - \nBest LP parameters:\n2025-09-30 02:53:44,110 - INFO -   - Epsilon: 0.10\n2025-09-30 02:53:44,110 - INFO -   - Rho: 0.01\n2025-09-30 02:53:44,110 - INFO -   - Coverage: 0.8633\n2025-09-30 02:53:44,110 - INFO -   - Average Width: 3.7334\n2025-09-30 02:53:44,110 - INFO - \nExperiment completed successfully!\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 8142.17 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
+=== Experiment Errors ===
+
+2025-09-30 02:53:45,054 - INFO - Starting LP Conformal Prediction Time Series Experiment
+
+2025-09-30 02:53:45,054 - INFO - Generating synthetic time series data...
+
+2025-09-30 02:53:45,054 - INFO - Generated 500 training samples and 300 test samples
+
+2025-09-30 02:53:45,054 - INFO - Test series has distribution shifts at times: [100, 200]
+
+2025-09-30 02:53:45,054 - INFO - Training time series predictor...
+
+2025-09-30 02:53:45,057 - INFO - Fitting LP conformal predictor...
+
+2025-09-30 02:53:45,057 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05
+
+2025-09-30 02:53:45,058 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480
+
+2025-09-30 02:53:45,058 - INFO - Testing on time series with distribution shifts...
+
+2025-09-30 02:53:45,060 - INFO - 
+
+==================================================
+
+2025-09-30 02:53:45,060 - INFO - EXPERIMENT RESULTS
+
+2025-09-30 02:53:45,060 - INFO - ==================================================
+
+2025-09-30 02:53:45,060 - INFO - LP Conformal Prediction:
+
+2025-09-30 02:53:45,060 - INFO -   - Empirical Coverage: 0.9500 (Target: 0.90)
+
+2025-09-30 02:53:45,060 - INFO -   - Average Interval Width: 5.2960
+
+2025-09-30 02:53:45,060 - INFO -   - Std of Interval Widths: 0.0000
+
+2025-09-30 02:53:45,061 - INFO -   - Worst-case Quantile: 2.6480
+
+2025-09-30 02:53:45,061 - INFO - 
+
+Standard Conformal Prediction:
+
+2025-09-30 02:53:45,061 - INFO -   - Empirical Coverage: 0.8267
+
+2025-09-30 02:53:45,061 - INFO -   - Quantile: 1.6265
+
+2025-09-30 02:53:45,061 - INFO - 
+
+LP Parameters:
+
+2025-09-30 02:53:45,061 - INFO -   - Epsilon (local): 0.5
+
+2025-09-30 02:53:45,061 - INFO -   - Rho (global): 0.05
+
+2025-09-30 02:53:45,061 - INFO -   - Alpha: 0.1
+
+2025-09-30 02:53:45,061 - INFO - 
+
+==================================================
+
+2025-09-30 02:53:45,061 - INFO - ROBUSTNESS ANALYSIS
+
+2025-09-30 02:53:45,061 - INFO - ==================================================
+
+2025-09-30 02:53:45,061 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.01
+
+2025-09-30 02:53:45,061 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 1.8667
+
+2025-09-30 02:53:45,061 - INFO - ε=0.1, ρ=0.01: Coverage=0.8633, Width=3.7334
+
+2025-09-30 02:53:45,061 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.05
+
+2025-09-30 02:53:45,061 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.2480
+
+2025-09-30 02:53:45,062 - INFO - ε=0.1, ρ=0.05: Coverage=0.9167, Width=4.4960
+
+2025-09-30 02:53:45,062 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)
+
+2025-09-30 02:53:45,062 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.1
+
+2025-09-30 02:53:45,062 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 2.9036
+
+2025-09-30 02:53:45,062 - INFO - ε=0.1, ρ=0.10: Coverage=0.9800, Width=5.8073
+
+2025-09-30 02:53:45,062 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.01
+
+2025-09-30 02:53:45,062 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.2667
+
+2025-09-30 02:53:45,063 - INFO - ε=0.5, ρ=0.01: Coverage=0.9167, Width=4.5334
+
+2025-09-30 02:53:45,063 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05
+
+2025-09-30 02:53:45,063 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480
+
+2025-09-30 02:53:45,063 - INFO - ε=0.5, ρ=0.05: Coverage=0.9500, Width=5.2960
+
+2025-09-30 02:53:45,063 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)
+
+2025-09-30 02:53:45,063 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.1
+
+2025-09-30 02:53:45,063 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.3036
+
+2025-09-30 02:53:45,064 - INFO - ε=0.5, ρ=0.10: Coverage=0.9967, Width=6.6073
+
+2025-09-30 02:53:45,064 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.01
+
+2025-09-30 02:53:45,064 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.7667
+
+2025-09-30 02:53:45,064 - INFO - ε=1.0, ρ=0.01: Coverage=0.9700, Width=5.5334
+
+2025-09-30 02:53:45,064 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.05
+
+2025-09-30 02:53:45,064 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 3.1480
+
+2025-09-30 02:53:45,064 - INFO - ε=1.0, ρ=0.05: Coverage=0.9833, Width=6.2960
+
+2025-09-30 02:53:45,064 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)
+
+2025-09-30 02:53:45,064 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.1
+
+2025-09-30 02:53:45,064 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.8036
+
+2025-09-30 02:53:45,065 - INFO - ε=1.0, ρ=0.10: Coverage=0.9967, Width=7.6073
+
+2025-09-30 02:53:45,065 - INFO - 
+
+Best LP parameters:
+
+2025-09-30 02:53:45,065 - INFO -   - Epsilon: 0.10
+
+2025-09-30 02:53:45,065 - INFO -   - Rho: 0.01
+
+2025-09-30 02:53:45,065 - INFO -   - Coverage: 0.8633
+
+2025-09-30 02:53:45,065 - INFO -   - Average Width: 3.7334
+
+2025-09-30 02:53:45,065 - INFO - 
+
+Experiment completed successfully!
+
+{
+
+"experimentStatusCode": 200,
+
+"body": {
+
+"message": "Experiment completed successfully",
+
+"returncode": 0,
+
+"stdout": "",
+
+"stderr": "2025-09-30 02:53:45,054 - INFO - Starting LP Conformal Prediction Time Series Experiment\n2025-09-30 02:53:45,054 - INFO - Generating synthetic time series data...\n2025-09-30 02:53:45,054 - INFO - Generated 500 training samples and 300 test samples\n2025-09-30 02:53:45,054 - INFO - Test series has distribution shifts at times: [100, 200]\n2025-09-30 02:53:45,054 - INFO - Training time series predictor...\n2025-09-30 02:53:45,057 - INFO - Fitting LP conformal predictor...\n2025-09-30 02:53:45,057 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05\n2025-09-30 02:53:45,058 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480\n2025-09-30 02:53:45,058 - INFO - Testing on time series with distribution shifts...\n2025-09-30 02:53:45,060 - INFO - \n==================================================\n2025-09-30 02:53:45,060 - INFO - EXPERIMENT RESULTS\n2025-09-30 02:53:45,060 - INFO - ==================================================\n2025-09-30 02:53:45,060 - INFO - LP Conformal Prediction:\n2025-09-30 02:53:45,060 - INFO -   - Empirical Coverage: 0.9500 (Target: 0.90)\n2025-09-30 02:53:45,060 - INFO -   - Average Interval Width: 5.2960\n2025-09-30 02:53:45,060 - INFO -   - Std of Interval Widths: 0.0000\n2025-09-30 02:53:45,061 - INFO -   - Worst-case Quantile: 2.6480\n2025-09-30 02:53:45,061 - INFO - \nStandard Conformal Prediction:\n2025-09-30 02:53:45,061 - INFO -   - Empirical Coverage: 0.8267\n2025-09-30 02:53:45,061 - INFO -   - Quantile: 1.6265\n2025-09-30 02:53:45,061 - INFO - \nLP Parameters:\n2025-09-30 02:53:45,061 - INFO -   - Epsilon (local): 0.5\n2025-09-30 02:53:45,061 - INFO -   - Rho (global): 0.05\n2025-09-30 02:53:45,061 - INFO -   - Alpha: 0.1\n2025-09-30 02:53:45,061 - INFO - \n==================================================\n2025-09-30 02:53:45,061 - INFO - ROBUSTNESS ANALYSIS\n2025-09-30 02:53:45,061 - INFO - ==================================================\n2025-09-30 02:53:45,061 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.01\n2025-09-30 02:53:45,061 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 1.8667\n2025-09-30 02:53:45,061 - INFO - \u03b5=0.1, \u03c1=0.01: Coverage=0.8633, Width=3.7334\n2025-09-30 02:53:45,061 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.05\n2025-09-30 02:53:45,061 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.2480\n2025-09-30 02:53:45,062 - INFO - \u03b5=0.1, \u03c1=0.05: Coverage=0.9167, Width=4.4960\n2025-09-30 02:53:45,062 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)\n2025-09-30 02:53:45,062 - INFO - Fitted LP conformal predictor: epsilon=0.1, rho=0.1\n2025-09-30 02:53:45,062 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 2.9036\n2025-09-30 02:53:45,062 - INFO - \u03b5=0.1, \u03c1=0.10: Coverage=0.9800, Width=5.8073\n2025-09-30 02:53:45,062 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.01\n2025-09-30 02:53:45,062 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.2667\n2025-09-30 02:53:45,063 - INFO - \u03b5=0.5, \u03c1=0.01: Coverage=0.9167, Width=4.5334\n2025-09-30 02:53:45,063 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.05\n2025-09-30 02:53:45,063 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 2.6480\n2025-09-30 02:53:45,063 - INFO - \u03b5=0.5, \u03c1=0.05: Coverage=0.9500, Width=5.2960\n2025-09-30 02:53:45,063 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)\n2025-09-30 02:53:45,063 - INFO - Fitted LP conformal predictor: epsilon=0.5, rho=0.1\n2025-09-30 02:53:45,063 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.3036\n2025-09-30 02:53:45,064 - INFO - \u03b5=0.5, \u03c1=0.10: Coverage=0.9967, Width=6.6073\n2025-09-30 02:53:45,064 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.01\n2025-09-30 02:53:45,064 - INFO - Empirical quantile: 1.7667, Worst-case quantile: 2.7667\n2025-09-30 02:53:45,064 - INFO - \u03b5=1.0, \u03c1=0.01: Coverage=0.9700, Width=5.5334\n2025-09-30 02:53:45,064 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.05\n2025-09-30 02:53:45,064 - INFO - Empirical quantile: 2.1480, Worst-case quantile: 3.1480\n2025-09-30 02:53:45,064 - INFO - \u03b5=1.0, \u03c1=0.05: Coverage=0.9833, Width=6.2960\n2025-09-30 02:53:45,064 - WARNING - Adjusted quantile level 1.0100 is outside (0,1)\n2025-09-30 02:53:45,064 - INFO - Fitted LP conformal predictor: epsilon=1.0, rho=0.1\n2025-09-30 02:53:45,064 - INFO - Empirical quantile: 2.8036, Worst-case quantile: 3.8036\n2025-09-30 02:53:45,065 - INFO - \u03b5=1.0, \u03c1=0.10: Coverage=0.9967, Width=7.6073\n2025-09-30 02:53:45,065 - INFO - \nBest LP parameters:\n2025-09-30 02:53:45,065 - INFO -   - Epsilon: 0.10\n2025-09-30 02:53:45,065 - INFO -   - Rho: 0.01\n2025-09-30 02:53:45,065 - INFO -   - Coverage: 0.8633\n2025-09-30 02:53:45,065 - INFO -   - Average Width: 3.7334\n2025-09-30 02:53:45,065 - INFO - \nExperiment completed successfully!\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 930.87 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: f12bfda3-26cf-4d16-9e8e-6e1aed91df83 Version: $LATEST
+
+RequestId: f12bfda3-26cf-4d16-9e8e-6e1aed91df83 Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: f12bfda3-26cf-4d16-9e8e-6e1aed91df83
+
+REPORT RequestId: f12bfda3-26cf-4d16-9e8e-6e1aed91df83	Duration: 933.00 ms	Billed Duration: 934 ms	Memory Size: 3008 MB	Max Memory Used: 63 MB	
+
